@@ -1,0 +1,5 @@
+build/
+results/smoke/
+results/full/
+*.vtu
+*.pvtu
