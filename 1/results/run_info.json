@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-10-24T02:15:40Z",
+  "repository": "uyifi001/10_23",
+  "workdir": "/home/runner/work/10_23/10_23/1",
+  "status": "blocked_missing_dealii",
+  "commands": [
+    "apt-get update && apt-get install -y libdeal.ii-dev",
+    "cmake -S /home/runner/work/10_23/10_23/1 -B /home/runner/work/10_23/10_23/1/build"
+  ],
+  "command_results": [
+    {
+      "command": "apt-get update && apt-get install -y libdeal.ii-dev",
+      "exit_summary": "failed",
+      "reason": "Permission denied opening /var/lib/apt/lists/lock"
+    },
+    {
+      "command": "cmake -S ... -B ...",
+      "exit_summary": "failed",
+      "reason": "deal.IIConfig.cmake / deal.ii-config.cmake not found"
+    }
+  ],
+  "artifacts_generated": [
+    "results/apt_install.log",
+    "results/cmake_configure.log"
+  ],
+  "notes": [
+    "No executable was produced in this environment, so force-displacement CSV and VTU outputs were not generated here.",
+    "Use run_smoke.sh on a machine with deal.II installed to generate smoke outputs."
+  ]
+}
